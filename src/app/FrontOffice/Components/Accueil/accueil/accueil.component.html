@@ -1,0 +1,67 @@
+<app-slider title={{titleBreadcrumb}} description={{description}} images={{imageBreadcrumb}}></app-slider>
+<div class="typo-container">
+    <div class="search-container">
+        <nav>
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Recherche</button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Détail</button>
+            </div> 
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active dim-tab" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <select class="property-type"> 
+                    <option value="">Type de propriété</option>
+                </select> 
+                <input type="text" placeholder="Recherche par propriété, zone, budget..."> 
+                <button class="search-button">Rechercher</button> 
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+        </div>
+    </div>
+</div>
+<div class="body">
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div>  
+</div>
+<div class="rubrique-container">
+    <h1 class="text-rubrique">Nos propriétés</h1>
+    <div class="type-logement-container">
+        <app-type-logement  [image]="image3" [type]="type"/>
+        <app-type-logement  [image]="image" [type]="type2"/>
+        <app-type-logement  [image]="image3" [type]="type3"/>
+        <app-type-logement  [image]="image" [type]="type4"/>
+        <app-type-logement  [image]="image3" [type]="type5"/>
+    </div>    
+</div>
+<div class="rubrique-container">
+    <h1 class="text-rubrique">Nos tarifs</h1>
+    <div class="type-abonnement-container" >
+        <div *ngFor="let abonnement of abonnements">
+            <app-type-abonnement-premium 
+                [typeAbonnement]="abonnement.typeAbonnement"
+                [prixAbonnement]="abonnement.price"
+            />
+        </div>
+    </div>    
+</div>
+<div class="flex-row-between">
+   <!--  <div class="d-flex align-items-center">
+        <span style="white-space: nowrap">Affichage par</span>
+        <select class="form-select form-select-sm mx-2 form-select-filter" [(ngModel)]="pageSize"
+                (ngModelChange)="getAnnonce()">
+            <option [ngValue]="10">10</option>
+            <option [ngValue]="20">20</option>
+            <option [ngValue]="30">30</option>
+        </select>
+        <span style="white-space: nowrap">entrées</span>
+    </div> -->
+    <!-- <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize"
+                    (pageChange)="getAnnonce()" [maxSize]="2" [rotate]="true" [boundaryLinks]="true">
+    </ngb-pagination> -->
+</div>

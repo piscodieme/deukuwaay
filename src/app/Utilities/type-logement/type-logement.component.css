@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 0 10px #8a8888;
+    cursor: pointer;
+}
+.card-body{
+    height: 280px;
+    width: 250;
+}
+
+.card-body img{
+    max-width: 250px;
+    height: 220px;
+}
+
+.card-caption{
+    height: 20%;
+    width: 100%;
+/*     margin-top: 10px;
+ */    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title{
+    font-size: 18px;
+    font-family: "ABeeZee";
+    font-weight: bold;
+}

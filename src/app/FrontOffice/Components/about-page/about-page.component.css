@@ -1,0 +1,263 @@
+.rubrique-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 2700px;
+    margin-top: -150px;
+    border-radius: 80px 80px 0 0;
+    z-index: 99999;
+    position: relative;
+}
+
+.line{
+    width: 40%;
+    height: 5px;
+    background-color: #007199;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.content-subtitle{
+    margin-top: 50px;
+    margin-left: -1000px;
+    width: 20%;
+    margin-bottom: 50px;
+
+}
+
+.content-subtitle div h2{
+    font-family: "AbHaya";
+    font-size: 35px;
+}
+.content-service{
+    height: 500px;
+    width: 70%;
+    background-color: #f7f7f7;
+    margin-top: -30px;
+    padding: 10px 80px;
+    border-radius: 35px;
+    box-shadow:0 0 10px #fff;
+}
+
+.list-service{
+    font-family: "ABeeZee";
+    font-size: 18px;
+}
+li{
+    list-style: none;
+    color: black;
+}
+
+li::before{
+    content: ".";
+    color: #007199;
+    font-size: 60px;
+    padding-right: 20px;
+}
+
+.second-part-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+.img-box{
+    width: 60%;
+    height: 700px;
+}
+.img-box img{
+    width: 95%;
+    height: 100%;
+    border-radius: 0 30px 0 0;
+}
+
+.text-box{
+    width: 40%;
+    margin-right: 50px;
+}
+
+.title{
+    width: 50%;
+}
+.title h2{
+    font-family: "AbHaya";
+    font-size: 35px;
+    font-style: normal;
+}
+
+.text{
+    padding: 40px 0;
+}
+
+.text p {
+    font-family: "ABeeZee";
+    font-size: 18px;
+}
+
+.text-box button{
+    background-color: #007199;
+    border: #007199;
+    box-shadow: 0 10px #fff;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    border-radius: 0 20px 0 0;
+}
+
+ button a{
+    text-decoration: none;
+    color: #fff;
+    font-family: "AbHaya";
+    font-size: 20px;
+}
+
+#arrow{
+    padding-left: 10px;
+}
+
+.third-part-about{
+    height: 600px;
+    margin-top: 50px;
+    background: linear-gradient(to bottom, #9f9c9c 2%, #007199 100%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-third-part{
+    margin-bottom: 35px;
+}
+.title-third-part h2{
+    font-family: "AbHaya";
+    font-size: 45px;
+    font-style: bold;
+    color: #fff;
+}
+
+.third-text{
+ width: 80%;
+ margin: 0 auto;
+}
+.third-text p{
+    font-family: "AbHaya";
+    font-size: 25px;
+    font-size: bold;
+    color: #fff;
+}
+
+.third-part-about button{
+    background-color: #F16822;
+    border: #F16822;
+    box-shadow: 0 0 10px #fff;
+    color: #fff;
+    height: 50px;
+    width: 200px;
+    border-radius: 0 20px 0 0;
+    margin-top: 20px;
+}
+
+.third-line-top{
+    width: 20%;
+    height: 4px;
+    margin-bottom: 20px;
+    background-color: #F16822;
+/*     background : linear-gradient(to right #F16822 50%, #007199 50% );
+ */}
+
+ .third-text-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .third-text-box h1{
+    font-family: "AbHaya";
+    font-size: 75px;
+    color: #fff;
+    margin-right: 40px;
+ }
+
+ .temoignage{
+    height: 500px;
+    width: 100%;
+    margin: 30px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ }
+
+ .title-temoignage{
+ }
+
+ .title-temoignage h2{
+    color: #fff;
+    font-family: "AbHaya";
+    color: #007199;
+    font-size: 45px;
+    border-bottom: 5px solid #007199;
+ }
+
+.temoignage-content{
+    height: 80%;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.part-temoins{
+    height: 90%;
+    width: 32%;
+}
+
+.profil-temoins{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .img-profil{
+ }
+
+ .img-profil img{
+    height: 80px;
+    width: 80px;
+    margin-right: 20px;
+ }
+
+ .nom-temoin h3{
+    font-family: "AbHaya";
+    font-size: 30px;
+    font-style: italic;
+ }
+
+ .nom-temoin span{
+    font-family: "ABeeZee";
+    font-size: 25px;
+    font-style: italic;
+ }
+
+.text-temoignage{
+    height: 60%;
+    width: 100%;
+    padding: 20px 10px;
+    margin-bottom: 5%;
+}
+
+.text-temoignage p{
+    color: #000;
+    font-family: "AbHaya";
+    font-size: 25px;
+}

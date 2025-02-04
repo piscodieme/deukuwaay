@@ -1,0 +1,59 @@
+<app-slider title={{titleBreadcrumb}} description={{description}} images={{imageBreadcrumb}}></app-slider>
+<div class="rubrique-container">
+    <!-- <div class="type-logement-container">
+        <app-type-logement  [image]="image3" [type]="type"/>
+        <app-type-logement  [image]="image" [type]="type2"/>
+        <app-type-logement  [image]="image3" [type]="type3"/>
+        <app-type-logement  [image]="image" [type]="type4"/>
+        <app-type-logement  [image]="image3" [type]="type5"/>
+    </div>    --> 
+    <div class="content-subtitle">
+        <div id="line"></div>
+        <div>
+            <h2>Trouvez chez vous, maintenant !</h2>
+        </div>
+    </div>
+    <div class="search-container">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active dim-tab" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <select class="property-type"> 
+                    <option value="">Type de propriété</option>
+                    <option value="">Appartement</option>
+                    <option value="">Maison</option>
+                    <option value="">Chambre</option>
+                </select> 
+                <select class="property-type"> 
+                    <option value="">Votre budget</option>
+                    <option value="">- de 100.000</option>
+                    <option value="">- de 130.000</option>
+                    <option value="">- de 150.000</option>
+                </select> 
+                <select class="property-type"> 
+                    <option value="">Région Souhaitée</option>
+                    <option value="">Dakar</option>
+                    <option value="">Thiès</option>
+                    <option value="">Kaolack</option>
+                </select> 
+                <select class="property-type" id="last-select"> 
+                    <option value="">Département souhaité</option>
+                    <option value="">Mbour</option>
+                    <option value="">Pikine</option>
+                    <option value="">Guediawaye</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image" [title]="title"></app-annonce-card></div> 
+        <div class="card"><app-annonce-card [image]="image2" [title]="title2"></app-annonce-card></div>  
+</div>
+</div>
+<div class="typo-container">
+    
+</div>
