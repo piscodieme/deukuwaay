@@ -39,10 +39,10 @@ const routes: Routes = [
   {
     path:'**',
     component:NotFoundComponent
-  },
-  { path: 'logement', loadChildren: () => import('./FrontOffice/Components/Logement/logement.module').then(m => m.LogementModule) },
+  }
+ /*  { path: 'logement', loadChildren: () => import('./FrontOffice/Components/Logement/logement.module').then(m => m.LogementModule) },
   { path: 'accueil', loadChildren: () => import('./FrontOffice/Components/Accueil/accueil.module').then(m => m.AccueilModule) }
-
+ */
 ];
 
 @NgModule({
