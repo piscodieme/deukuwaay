@@ -25,6 +25,8 @@ import { NosServicesPageComponent } from './FrontOffice/Components/nos-services-
 import { AgencesPageComponent } from './FrontOffice/Components/agences-page/agences-page.component';
 import { TypeAbonnementPremiumComponent } from './Utilities/type-abonnement-premium/type-abonnement-premium.component';
 import { TypeAbonnementComponent } from './Utilities/type-abonnement/type-abonnement.component';
+import { LoginComponent } from './FrontOffice/Components/login/login.component';
+import { RegisterComponent } from './FrontOffice/Components/register/register.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { TypeAbonnementComponent } from './Utilities/type-abonnement/type-abonne
     NosServicesPageComponent,
     AgencesPageComponent,
     TypeAbonnementPremiumComponent,
-    TypeAbonnementComponent
+    TypeAbonnementComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
         BrowserModule,

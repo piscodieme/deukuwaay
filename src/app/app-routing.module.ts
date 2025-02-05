@@ -6,6 +6,8 @@ import { LogementListComponent } from './FrontOffice/Components/Logement/logemen
 import { AboutPageComponent } from './FrontOffice/Components/about-page/about-page.component';
 import { AgencesPageComponent } from './FrontOffice/Components/agences-page/agences-page.component';
 import { NosServicesPageComponent } from './FrontOffice/Components/nos-services-page/nos-services-page.component';
+import { LoginComponent } from './FrontOffice/Components/login/login.component';
+import { RegisterComponent } from './FrontOffice/Components/register/register.component';
 
 const routes: Routes = [
   {
@@ -35,6 +37,14 @@ const routes: Routes = [
   {
     path: 'logementDetail/:id',
     component: LogementListComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent 
+  },
+  {
+    path: 'register',
+    component: RegisterComponent
   },
   {
     path:'**',
