@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class AboutPageComponent {
 
   imageBreadcrumb = "./../../../assets/imgsites/room.jpg"
-  titleBreadcrumb = "Votre partenaire en matière  d’habitat au Sénégal !"
+  titleBreadcrumb = "Votre partenaire en matière  d’habitat au Sénégal"
   description = "Chez Dëkuwaay, notre mission est de rendre la recherche de logement au Sénégal plus simple, transparente et accessible pour tous nos clients. Nous sommes là pour vous accompagner à chaque étape de votre voyage vers votre nouvel habitat."
   
   image = "./../../../assets/imgsites/immoimg1.jpg"

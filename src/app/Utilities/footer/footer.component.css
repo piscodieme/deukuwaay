@@ -117,6 +117,8 @@ li{
     width: 200px;
     font-family: "AbHaya";
     font-size: large;
+    cursor: pointer;
+    box-shadow:  2.5px 3px 8px #9fdaf0;
 }
 
 #arrow{

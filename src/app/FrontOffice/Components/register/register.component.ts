@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class RegisterComponent {
 
+  list = [
+    { code: 'CRT', libelle: "Courtier" },
+    { code: 'AGC', libelle: "Agence" },
+    { code: 'ANC', libelle: "Annonceur" },
+    { code: 'VST', libelle: "Visiteur" }
+  ]
 }

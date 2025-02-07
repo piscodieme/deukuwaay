@@ -6,8 +6,8 @@
     background-color: #fff;
     height: 2700px;
     margin-top: -150px;
-    border-radius: 80px 80px 0 0;
-    z-index: 99999;
+    border-radius: 65px 65px 0 0;
+    z-index: 9999;
     position: relative;
 }
 
@@ -100,7 +100,8 @@ li::before{
 .text-box button{
     background-color: #007199;
     border: #007199;
-    box-shadow: 0 10px #fff;
+    cursor: pointer;
+    box-shadow:  2.5px 3px 8px #9fdaf0;
     color: #fff;
     height: 50px;
     width: 200px;
@@ -153,7 +154,8 @@ li::before{
 .third-part-about button{
     background-color: #F16822;
     border: #F16822;
-    box-shadow: 0 0 10px #fff;
+    cursor: pointer;
+    box-shadow:  2.5px 3px 8px #9fdaf0;
     color: #fff;
     height: 50px;
     width: 200px;
@@ -260,4 +262,44 @@ li::before{
     color: #000;
     font-family: "AbHaya";
     font-size: 25px;
+}
+
+@media screen  and (max-width:1600px) and (min-width:1300px) {
+    .rubrique-container{
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        height: 2500px;
+        margin-top: -60px;
+        border-radius: 80px 80px 0 0;
+        z-index: 99999;
+        position: relative;
+    }
+    .content-subtitle{
+        margin-top: -2300px;
+        position: relative;
+    }
+    .content-service{
+        position: absolute;
+        width: 70%;
+        margin-top: -1800px;
+        
+    }
+    .second-part-about{
+        position: absolute;
+        margin-top: -500px;
+    }
+    .third-part-about{
+        margin-top: 900px;
+        position: absolute;
+
+    }
+    .temoignage{
+        margin: 2050px 80px 50px 80px;
+        position: absolute;
+     }
+    
 }

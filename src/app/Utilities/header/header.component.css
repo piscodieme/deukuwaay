@@ -200,8 +200,7 @@ header ul li button{
     border: none;
     outline: none;
     cursor: pointer;
-    box-shadow:0 0 10px #fff;
-    font-size: 16px;
+    box-shadow:  2.5px 3px 8px #9fdaf0;    font-size: 16px;
 
 }
 

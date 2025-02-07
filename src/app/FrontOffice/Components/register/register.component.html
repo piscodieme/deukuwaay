@@ -1,1 +1,62 @@
-<p>register works!</p>
+<div class="login-page">
+    <div class="login-content">
+        <div class="login-left">
+            <div class="img-login">
+                <img src="./../../../../assets/imgsites/immoimg2.jpg" alt="">
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="logo-form">
+                <div id="logo-content">
+                    <img src="./../../../../assets/imgsites/logo-blanc.png" alt="logo">
+                </div>
+                <div class="connexion">
+                    <div>
+                        <h2>Inscription</h2>
+                    </div>
+                </div>
+            </div>
+            <div id="text-connexion">
+                <span>
+                    Saisir vos informations personnelles et professionnelles
+                </span>
+            </div>
+            <div class="form-part">
+                <form action="">
+                    <div class="input-content">
+                        <input type="text">
+                        <div class="input-label">Prénom</div>
+                    </div>
+                    <div class="input-content">
+                        <input type="text">
+                        <div class="input-label">Nom</div>
+                    </div>
+                    <div class="input-content">
+                        <input type="number">
+                        <div class="input-label">Numéro de téléphone</div>
+                    </div>
+                    <div class="input-content">
+                        <input type="email">
+                        <div class="input-label">Email</div>
+                    </div>
+                    <div class="input-content">
+                        <input type="text">
+                        <div class="input-label">Adresse</div>
+                    </div>
+                    <div class="input-content">
+                        <select>
+                            <option *ngFor="let item of list" [value]="item.code">{{item.libelle}}</option>
+                        </select>
+                        <div class="input-label">Profil souhaité</div>
+                    </div>
+                    <div>
+                        <button type="submit">
+                            Valider 
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i> 
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
