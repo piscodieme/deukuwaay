@@ -1,21 +1,30 @@
-<app-slider title={{titleBreadcrumb}} description={{description}} images={{imageBreadcrumb}}></app-slider>
+<app-slider title={{titleBreadcrumb}} description={{description}} [autoSlide]=true></app-slider>
 <div class="typo-container">
     <div class="search-container">
         <nav>
             <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Recherche</button>
-              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Détail</button>
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Recherche rapide</button>
             </div> 
         </nav>
         <div class="tab-content" id="nav-tabContent">
             <div class="tab-pane fade show active dim-tab" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <select class="property-type"> 
                     <option value="">Type de propriété</option>
-                </select> 
-                <input type="text" placeholder="Recherche par propriété, zone, budget..."> 
+                    <option value="">Studio</option>
+                    <option value="">Appartement</option>
+                    <option value="">Maison</option>
+                    <option value="">Chambre</option>
+                </select>
+                <select class="property-type"> 
+                    <option value="">Zone</option>
+                    <option value="">Pikine</option>
+                    <option value="">Sicap</option>
+                    <option value="">Foire</option>
+                    <option value="">Keur massar</option>
+                </select>
+                <input type="number" placeholder="Votre budget"> 
                 <button class="search-button">Rechercher</button> 
             </div>
-            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
         </div>
     </div>
 </div>
@@ -39,17 +48,7 @@
         <app-type-logement  [image]="image3" [type]="type5"/>
     </div>    
 </div>
-<div class="rubrique-container">
-    <h1 class="text-rubrique">Nos tarifs</h1>
-    <div class="type-abonnement-container" >
-        <div *ngFor="let abonnement of abonnements">
-            <app-type-abonnement-premium 
-                [typeAbonnement]="abonnement.typeAbonnement"
-                [prixAbonnement]="abonnement.price"
-            />
-        </div>
-    </div>    
-</div>
+
 <div class="flex-row-between">
    <!--  <div class="d-flex align-items-center">
         <span style="white-space: nowrap">Affichage par</span>

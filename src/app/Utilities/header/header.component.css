@@ -131,9 +131,11 @@
   header .logo{
     flex: 1;
     color: #fff;
-    margin-left: 50px;
+    padding-left: 50px;
     text-transform: uppercase;
-} header .logo img{
+} 
+
+header .logo img{
     width: 30%;
     height: 100%;
 }
@@ -172,7 +174,8 @@ header ul{
     justify-content: space-between;
     margin-right: 10px;
 }
-header ul li{
+header ul li,
+header ul div li {
     list-style: none;
 }
 header ul li a{
@@ -192,6 +195,14 @@ header .menu{
     font-size:2.5em;
     display: none;
 }
+
+.login-register{
+ margin-left: 20%;
+ display: flex;
+ flex-direction: row;
+ width: 25%;
+}
+
 header ul li button{
     background: #F16822;
     color: #fff;
@@ -200,8 +211,6 @@ header ul li button{
     border: none;
     outline: none;
     cursor: pointer;
-    box-shadow:  2.5px 3px 8px #9fdaf0;    font-size: 16px;
-
 }
 
 @media(max-width:1000px){

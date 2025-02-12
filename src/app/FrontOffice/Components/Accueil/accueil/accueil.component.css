@@ -148,15 +148,16 @@
     border-radius: 4px;
     margin-right: 10px;
     flex: 1;
+    width: 25%;
 }
 
-input[type="text"] {
+input[type="number"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     flex: 2;
     margin-right: 10px;
-    width: 60%;
+    width: 30%;
 }
 
 .search-button {

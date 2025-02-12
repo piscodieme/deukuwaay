@@ -1,1 +1,12 @@
-<p>nos-services-page works!</p>
+<app-slider title={{titleBreadcrumb}} description={{description}} [autoSlide]=true></app-slider>
+<div class="rubrique-container">
+    <h1 class="text-rubrique">Nos tarifs</h1>
+    <div class="type-abonnement-container" >
+        <div *ngFor="let abonnement of abonnements">
+            <app-type-abonnement-premium 
+                [typeAbonnement]="abonnement.typeAbonnement"
+                [prixAbonnement]="abonnement.price"
+            />
+        </div>
+    </div>    
+</div>

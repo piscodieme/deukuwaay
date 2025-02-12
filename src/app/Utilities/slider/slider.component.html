@@ -1,6 +1,24 @@
 <div class="breadcrumb">
-    <img src={{images}} alt="">
-</div>
+    <div *ngIf="images && images.length>0" class="caroussel-container">
+        <img 
+            *ngFor="let img of images; let i = index"  
+            [src]="img.src" 
+            [alt]="img.alt"
+            class="fade"
+            [ngClass]="{'image-active':selectedIndex===i}"
+        >
+      <!--   <div *ngIf="indicateur" class="caroussel-dot-container">
+            <span *ngFor="let dot of images; let i = index"
+                class="dot"
+                [ngClass]="{'active':selectedIndex===i}"
+                (click)="selectImage(i)"
+            >
+                
+            </span>
+        </div> -->
+    </div>
+<!--     <img src={{images}} alt="">
+ --></div>
 <div class="typo-container">
     <span class="typo">{{title}}</span>
     <div>
